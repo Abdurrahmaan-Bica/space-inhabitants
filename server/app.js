@@ -18,6 +18,9 @@ app.use(bodyparser.json())
 app.get("/",(req,res)=>{
    res.render("home")
 })
+app.get("/application-form",(req,res)=>{
+    res.render("applicationform")
+})
 app.get("/playground",(req,res)=>{
     res.render("playground")
 })
