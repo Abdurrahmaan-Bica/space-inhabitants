@@ -18,7 +18,9 @@ app.use(bodyparser.json())
 app.get("/",(req,res)=>{
    res.render("home")
 })
-
+app.get("/playground",(req,res)=>{
+    res.render("playground")
+})
 
 
 // Port 8080
