@@ -7,3 +7,44 @@ html(lang="en")
         link(rel="stylesheet", href="/static/css/style.css")
         title Application Form
     body 
+        nav.navbar.bg-body-tertiary
+        .container-fluid
+          a.navbar-brand(href="")
+            img(src="./static/images/" alt="Logo" width="200" height="200" class="d-inline-block align-text-top")
+          ul.nav.justify-content-end
+            li.nav-item
+              a.nav-link(href="") 
+        .container.d-flex.justify-content-center.align-items-center.mt-5
+            h2 Application Form      
+
+      
+        .container.d-flex.justify-content-center.align-items-center(style="margin-top: 3rem;")
+            form(action="/apply", method="post")
+
+                .mb-3.row
+                    label.col-sm-3.col-form-label(for="inputName") Name
+                    .col-sm-8
+                        input#InputName.form-control(type="text" name="name")
+                    br
+                    br
+                .mb-3.row
+                    label.col-sm-3.col-form-label(for="inputUniversity") University
+                    .col-sm-8
+                        input#InputId.form-control(type="text" name="university")
+                    br
+                    br
+                .mb-3.row
+                    label.col-sm-3.col-form-label(for="inputDegree") Degree
+                    .col-sm-8
+                        input#inputDegree.form-control(type="text" name="degree")
+                    br
+                    br
+                .mb-3.row
+                    label.col-sm-3.col-form-label(for="inputCourseOfStudy") Course of Study
+                    .col-sm-8
+                        input#inputcourseofstudy.form-control(type="text" name="courseofstudy")
+                    br
+                    br
+                .container(style="margin-top: -1rem;margin-left: 9rem;")
+                  a(href="home")
+                    button.btn.btn-secondary.btn-sm.mt-5(type="button") Submit
